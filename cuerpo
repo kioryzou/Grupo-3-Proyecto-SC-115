@@ -1,0 +1,8 @@
+#MENU
+print ("Bienvenido al supermercado los pollitos") 
+
+print ("Desea 'Ingresar una nueva compra' o 'desea salir' ") 
+FirstQuestion = input()
+
+#LISTA DE PRODUCTOS
+list = ()
