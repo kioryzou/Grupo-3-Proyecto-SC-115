@@ -1,8 +1,12 @@
-#MENU
-print ("Bienvenido al supermercado los pollitos") 
+#PRINT DE LA ELECCION DE SALIR O INGRESAR COMPRA NUEVA
+print("ingresar nueva compra")
+print("o")
+print("salir")
+print("escriba la opcion que desea ejecutar")
+Awnser1 = input()
 
-print ("Desea 'Ingresar una nueva compra' o 'desea salir' ") 
-FirstQuestion = input()
+#LISTA DE PRODCUTOS 
+List = ("Cafe precio $8", "Aceite precio $7", "Arroz precio $9", "Frijoles precio $8")
 
-#LISTA DE PRODUCTOS
-list = ()
+if Awnser1 == "salir":
+    print ("salio")
