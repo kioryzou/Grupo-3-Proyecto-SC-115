@@ -10,3 +10,61 @@ List = ("Cafe precio $8", "Aceite precio $7", "Arroz precio $9", "Frijoles preci
 
 if Awnser1 == "salir":
     print ("salio")
+
+#SOLICITUD DE FECHA Y NOMBRE DE USUARIO
+if Awnser1 == "ingresar nueva compra":
+    print ("Ingrese el nombre del cliente")
+    ClientName = input()
+
+    print ("ingrese la fecha de el dia de la compra")
+    Day   = input()
+    while (Day > "31"):
+     print ("ingrese la fecha de el dia de la compra")
+     Day   = input()
+
+    print ("Ingrese la fecha del mes de la compra")
+    Month = input()
+    while (Month > "12"):
+     print ("Ingrese la fecha del mes de la compra")
+     Month = input()
+    
+    print ("Igrese el año de la compra")
+    Year  = input()
+    while (Year < "2022" ):
+     print ("Igrese el año de la compra")
+     Year  = input()
+
+    #PRINT DE LA LISTA DE PRODUCTOS
+    for elements in List:
+        print(elements)
+
+    #ELECCION DE PRODUCTO
+    print ("Escriba el nombre del producto que desea comprar ")
+    Product1 = input()
+    print("escriba el precio del producto")
+    ProductPrice1=int(input())
+    print("ingrese la cantidad que desea comprar de este producto")
+    Cantidad1=int(input())
+    total1 = ProductPrice1*Cantidad1
+
+    #ELECCION DE AGREGAR OTRO PRODUCTO O FINALIZAR
+    print("Si desea agregar otro producto escriba (agregar producto) o si desea finalizar la compra escriba (finalizar)")
+    Decision= input()
+    
+    #FINALIZACION DE LA ELECCION DE DOS PRODUCTOS
+    if Decision == "agregar producto":
+       print ("Escriba el nombre del producto que desea comprar ")
+       Product2=input()
+       print("escriba el precio del producto")
+       ProductPrice2=int(input())
+       print("ingrese la cantidad que desea comprar de este producto")
+       Cantidad2=int(input())
+       total2 = ProductPrice2*Cantidad2
+       print ("factura total")
+       total3 = total1+total2
+       print("$",total3)
+
+    #FINALIZACION DE LA ELECCION DE UN SOLO PRODUCTO
+    elif Decision == "finalizar":
+     print ("total a pagar")
+     print("$",total1)
